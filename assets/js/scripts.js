@@ -246,3 +246,8 @@ setTimeout(function () {
         speed: 0.2,
     });
 }, 250);
+
+// jarallax(document.querySelectorAll('.ParallaxVideo'), {
+//     disableParallax: /iPad|iPhone|iPod|Android/,
+//     disableVideo: /iPad|iPhone|iPod|Android/
+// });

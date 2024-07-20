@@ -80,30 +80,7 @@
         }
 
 
-        /* 
-        video {
-            position: absolute;
-            min-width: 100%;
-            min-height: 100%;
-            top: 50%;
-            left: 50%;
-            width: auto;
-            height: auto;
-            z-index: -100;
-            transform: translateX(-50%) translateY(-50%);
-            filter: brightness(20%);
-            object-fit: cover;
-
-        } */
-
         .ParallaxVideo {
-            height: 300px;
-            padding-bottom: 50px;
-            padding-top: 50px;
-        }
-
-        .ParallaxVideo video {
-
             position: fixed;
             min-width: 100%;
             min-height: 100%;
@@ -220,11 +197,18 @@
 
     <!-- Hero -->
     <div id="home" class="d-flex align-items-center position-relative overflow-hidden">
-        <div class="ParallaxVideo">
-            <video autoplay muted loop id="myVideo">
+        <div class=" ParallaxVideo jarallax">
+
+            <div class="ParallaxVideo jarallax-video-youtube" data-jarallax
+                data-video-src="https://youtu.be/MRWL7HDa3oQ?si=l4A5wq8YQT86anrD&t=10" data-video-loop="true"
+                data-video-start-time="100" data-video-end-time="120">
+
+                <!-- <video autoplay muted loop id="myVideo">
                 <!--source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4"-->
-                <source src="./assets/videos/apresentacao_min.mp4" type="video/mp4">
-            </video>
+                <!-- <source src="./assets/videos/apresentacao_min.mp4" type="video/mp4">
+            </video> -->
+
+            </div>
         </div>
         <div class="container">
             <div class="py-8 py-md-9 py-xl-11">
