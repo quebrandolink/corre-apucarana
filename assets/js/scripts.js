@@ -16,11 +16,11 @@ var textDirectionOfTheDom = document.querySelector('html').getAttribute('dir');
   -------------------------------------------
 */
 
-window.addEventListener("load", function(event){
+window.addEventListener("load", function (event) {
     var loaderWrapper = document.querySelector('.loader-wrapper');
     if (loaderWrapper) {
         loaderWrapper.style.display = "none";
-    } 
+    }
 
     // initialize the AOS
     if (typeof AOS === 'object') {
@@ -85,7 +85,7 @@ function scrollToSection(sectionId) {
 
 const navigation = document.querySelector('.navigation');
 if (navigation) {
-    
+
     navigation.style.transition = 'top 1s';
     let lastScrollTop = 0;
 
@@ -134,7 +134,7 @@ function backToTop() {
 
 // When the user scrolls down 800px from the top of the document, show the button
 function scrollbtnBackToTopFun() {
-    if ( document.body.scrollTop > 800 || document.documentElement.scrollTop > 800 ) {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
         btnBackToTop.style.display = "inline-flex";
     } else {
         btnBackToTop.style.display = "none";
@@ -159,7 +159,7 @@ if (btnBackToTop) {
   ----------------------------------
   -----      JS for Glide      -----
   ----------------------------------
-*/ 
+*/
 
 
 
@@ -236,3 +236,13 @@ if (glideElements.length > 0) {
 
 
 
+/*  
+  ----------------------------------
+  -----      parallax      -----
+  ----------------------------------
+*/
+setTimeout(function () {
+
+    $('#informacoes').parallax({ imageSrc: 'https://www.visiteapucarana.com.br/wp-content/uploads/2021/12/DJI_0703.jpg' });
+    $('#home').parallax({ imageSrc: './assets/videos/apresentacao_min.mp4' });
+}, 250);
