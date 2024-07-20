@@ -242,7 +242,7 @@ if (glideElements.length > 0) {
   ----------------------------------
 */
 setTimeout(function () {
-
-    $('#informacoes').parallax({ imageSrc: 'https://www.visiteapucarana.com.br/wp-content/uploads/2021/12/DJI_0703.jpg' });
-    $('#home').parallax({ imageSrc: './assets/videos/apresentacao_min.mp4' });
+    jarallax(document.querySelectorAll('.jarallax'), {
+        speed: 0.2,
+    });
 }, 250);
