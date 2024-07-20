@@ -26,7 +26,7 @@ window.addEventListener("load", function (event) {
     if (typeof AOS === 'object') {
         AOS.init({
             offset: 0,
-            once: true,
+            once: false,
         });
     }
 })
@@ -251,3 +251,14 @@ setTimeout(function () {
 //     disableParallax: /iPad|iPhone|iPod|Android/,
 //     disableVideo: /iPad|iPhone|iPod|Android/
 // });
+
+/*
+  ----------------------------------
+  -----      locomotive      -----
+  ----------------------------------
+*/
+// const pageContainer = document.querySelector(".my-locomotive");
+
+// const scroller = new LocomotiveScroll({
+//     el: pageContainer, smooth: true
+// })
