@@ -262,3 +262,12 @@ setTimeout(function () {
 // const scroller = new LocomotiveScroll({
 //     el: pageContainer, smooth: true
 // })
+
+/*
+  ----------------------------------
+  -----      carousel of logos      -----
+  ----------------------------------
+*/
+
+var copy = document.querySelector(".logos-slide").cloneNode(true);
+document.querySelector(".logos").appendChild(copy);
